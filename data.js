@@ -11,7 +11,7 @@ const REPOS = [
     "created": "2025-08-12",
     "updated": "2026-10-08",
     "icon": "📱",
-    "image": ""
+    "image": "https://github.com/user-attachments/assets/5d8cfba5-8faa-4176-a689-c47b982c41ee"
   },
   {
     "name": "NowPlayingExporterPy",
@@ -24,7 +24,7 @@ const REPOS = [
     "created": "2025-08-20",
     "updated": "2026-04-06",
     "icon": "📱",
-    "image": ""
+    "image": "https://github.com/user-attachments/assets/162df03c-33f2-4275-89f1-eebd064d7c77"
   },
   {
     "name": "Fumitracking",
@@ -37,7 +37,7 @@ const REPOS = [
     "created": "2025-09-28",
     "updated": "2026-10-26",
     "icon": "🔒",
-    "image": ""
+    "image": "https://raw.githubusercontent.com/D4vRAM369/Fumitracking/main/app/src/main/ic_launcher-playstore.png"
   },
   {
     "name": "PsychoLogger",
@@ -63,7 +63,7 @@ const REPOS = [
     "created": "2025-11-28",
     "updated": "2026-04-19",
     "icon": "💬",
-    "image": ""
+    "image": "https://github.com/user-attachments/assets/3c1ce152-edd2-4414-a550-a5d4f609ad2a"
   },
   {
     "name": "AhorrApp",
@@ -76,7 +76,7 @@ const REPOS = [
     "created": "2025-12-10",
     "updated": "2026-04-19",
     "icon": "📱",
-    "image": ""
+    "image": "https://github.com/user-attachments/assets/80c9698c-41eb-4eb9-9dd0-da8d35fcdfe5"
   },
   {
     "name": "ThreadsVault",
@@ -89,7 +89,7 @@ const REPOS = [
     "created": "2026-02-20",
     "updated": "2026-04-19",
     "icon": "📱",
-    "image": ""
+    "image": "https://github.com/user-attachments/assets/1e871a24-469d-4d54-bb55-44b1f519ddf1"
   },
   {
     "name": "ThreadsVault-desktop",
@@ -102,7 +102,7 @@ const REPOS = [
     "created": "2026-02-27",
     "updated": "2026-04-19",
     "icon": "🖥️",
-    "image": ""
+    "image": "https://github.com/user-attachments/assets/e336810d-5130-4b7a-a275-fac97b15acec"
   },
   {
     "name": "Debuggle",
@@ -128,7 +128,7 @@ const REPOS = [
     "created": "2026-04-09",
     "updated": "2026-11-09",
     "icon": "🗄️",
-    "image": ""
+    "image": "https://github.com/user-attachments/assets/cfd41e9b-3230-4169-a1e2-b863e4d22e2d"
   },
   {
     "name": "TapTranslate",
@@ -180,7 +180,7 @@ const REPOS = [
     "created": "2026-06-25",
     "updated": "2026-06-25",
     "icon": "🤖",
-    "image": ""
+    "image": "https://raw.githubusercontent.com/D4vRAM369/meta-debug-pbl-skill/main/assets/banner.svg"
   },
   {
     "name": "pbl-project-chronicler",
@@ -219,7 +219,7 @@ const REPOS = [
     "created": "2026-10-13",
     "updated": "2026-10-14",
     "icon": "📦",
-    "image": ""
+    "image": "https://raw.githubusercontent.com/D4vRAM369/vaso-de-contexto/main/cinnamon/screenshot.png"
   },
   {
     "name": "PlaudVault",

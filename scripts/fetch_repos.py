@@ -4,6 +4,7 @@ Uso: python3 scripts/fetch_repos.py
 Requiere `gh` autenticado. ponytail: snapshot estático, no fetch en vivo
 (evita rate-limit/latencia en la web) — re-ejecutar cuando publiques algo nuevo.
 """
+import base64
 import json
 import re
 import subprocess
@@ -40,6 +41,50 @@ def pick_icon(name: str, desc: str) -> str:
     return DEFAULT_ICON
 
 
+BADGE_HOSTS = (
+    "shields.io", "img.shields.io", "visitorbadge.io", "visitor-badge",
+    "readme-typing-svg", "github-readme-stats", "counter.", "badge.fury.io",
+    "readme-stats.vercel.app", "deepwiki.com", "/badge.svg", "badge?",
+)
+
+IMG_MD_RE = re.compile(r"!\[[^\]]*\]\(([^)\s]+)")
+IMG_HTML_RE = re.compile(r'<img\b[^>]*\bsrc=["\']([^"\']+)["\']', re.IGNORECASE)
+
+
+def is_badge(url: str) -> bool:
+    return any(h in url.lower() for h in BADGE_HOSTS)
+
+
+def resolve_relative(url: str, repo: str, branch: str) -> str:
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+    path = url.lstrip("./")
+    return f"https://raw.githubusercontent.com/{USER}/{repo}/{branch}/{path}"
+
+
+def readme_banner(repo: str, branch: str) -> str:
+    result = subprocess.run(
+        ["gh", "api", f"repos/{USER}/{repo}/readme"],
+        capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        return ""
+    try:
+        b64 = json.loads(result.stdout)["content"]
+    except (KeyError, json.JSONDecodeError):
+        return ""
+    text = base64.b64decode(b64).decode("utf-8", errors="ignore")
+
+    matches = sorted(
+        [(m.start(), m.group(1)) for m in IMG_MD_RE.finditer(text)]
+        + [(m.start(), m.group(1)) for m in IMG_HTML_RE.finditer(text)]
+    )
+    for _, url in matches:
+        if not is_badge(url):
+            return resolve_relative(url, repo, branch)
+    return ""
+
+
 def fetch_social_previews() -> dict:
     """True para repos con imagen de social preview subida a mano en GitHub."""
     query = """
@@ -63,7 +108,7 @@ def main() -> None:
     raw = subprocess.run(
         ["gh", "repo", "list", USER, "--no-archived", "--source", "-L", "200",
          "--json", "name,description,url,primaryLanguage,stargazerCount,"
-                   "updatedAt,createdAt,isPrivate,homepageUrl,isFork"],
+                   "updatedAt,createdAt,isPrivate,homepageUrl,isFork,defaultBranchRef"],
         capture_output=True, text=True, check=True,
     ).stdout
     repos = json.loads(raw)
@@ -78,6 +123,8 @@ def main() -> None:
     out = []
     for r in public:
         lang = (r["primaryLanguage"] or {}).get("name")
+        branch = (r["defaultBranchRef"] or {}).get("name", "main")
+        image = social_previews.get(r["name"], "") or readme_banner(r["name"], branch)
         out.append({
             "name": r["name"],
             "description": r["description"] or "",
@@ -89,7 +136,7 @@ def main() -> None:
             "created": r["createdAt"][:10],
             "updated": r["updatedAt"][:10],
             "icon": pick_icon(r["name"], r["description"] or ""),
-            "image": social_previews.get(r["name"], ""),
+            "image": image,
         })
 
     with open("data.js", "w", encoding="utf-8") as f:
