@@ -109,4 +109,35 @@
   renderStats();
   renderFilters();
   renderTimeline();
+
+  // Tira descripción, stars y homepage en vivo desde GitHub: así un cambio en el
+  // About de un repo se ve aquí sin tocar data.js. Si falla (sin red, rate limit),
+  // se queda con el snapshot estático de data.js.
+  fetch("https://api.github.com/users/D4vRAM369/repos?per_page=100")
+    .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+    .then((live) => {
+      const byName = new Map(live.map((r) => [r.name, r]));
+      let changed = false;
+      repos.forEach((r) => {
+        const l = byName.get(r.name);
+        if (!l) return;
+        if (l.description && l.description !== r.description) {
+          r.description = l.description;
+          changed = true;
+        }
+        if (typeof l.stargazers_count === "number" && l.stargazers_count !== r.stars) {
+          r.stars = l.stargazers_count;
+          changed = true;
+        }
+        if (l.homepage && l.homepage !== r.homepage) {
+          r.homepage = l.homepage;
+          changed = true;
+        }
+      });
+      if (changed) {
+        renderStats();
+        renderTimeline();
+      }
+    })
+    .catch(() => {});
 })();
