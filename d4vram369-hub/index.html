@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>D4vRAM369 — portfolio</title>
+<meta name="description" content="Proyectos públicos de D4vRAM369: apps Android offline-first, herramientas de privacidad, skills de IA y utilidades de escritorio." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#62;_</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn" data-set-lang="es">ES</button>
+      <button class="lang-btn" data-set-lang="en">EN</button>
+    </div>
+    <p class="prompt">visitor@d4vram369.github.io <span class="cursor">:~$</span></p>
+    <h1>D4vRAM369<span class="blink">_</span></h1>
+    <p class="tagline" data-i18n="tagline"></p>
+    <div class="hero-links">
+      <a href="https://github.com/D4vRAM369" target="_blank" rel="noopener">github.com/D4vRAM369</a>
+    </div>
+    <div class="hero-stats" id="hero-stats" aria-live="polite"></div>
+    <div class="hero-actions">
+      <a class="btn btn-coffee" href="https://www.buymeacoffee.com/D4vRAM369" target="_blank" rel="noopener">☕ <span data-i18n="coffee"></span></a>
+      <a class="btn btn-ghost" href="https://telegram.me/D4vRAM369" target="_blank" rel="noopener">✈️ Telegram</a>
+      <a class="btn btn-ghost" href="mailto:d4vram369@proton.me">✉️ Email</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="controls">
+    <div class="filter-group" id="filters" role="group" aria-label="Filtrar por lenguaje"></div>
+    <input id="search" type="search" data-i18n-placeholder="search" autocomplete="off" />
+  </div>
+
+  <ol class="timeline" id="timeline"></ol>
+</main>
+
+<footer>
+  <p><span data-i18n="footer"></span> <span id="last-update"></span></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
