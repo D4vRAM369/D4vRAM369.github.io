@@ -62,7 +62,8 @@
       <li class="entry" style="--entry-color:${r.color}">
         <div class="entry-date">${date}</div>
         <div class="card">
-          <div class="banner" style="background:linear-gradient(${bannerAngle(r.name)}deg, ${r.color} 0%, ${secondaryColor(r.name)} 100%)">
+          <div class="banner${r.image ? " has-image" : ""}" style="background:linear-gradient(${bannerAngle(r.name)}deg, ${r.color} 0%, ${secondaryColor(r.name)} 100%)">
+            ${r.image ? `<img class="banner-img" src="${r.image}" alt="" loading="lazy" onerror="this.remove()" />` : ""}
             <span class="icon">${r.icon}</span>
             <span class="banner-name">${escapeHtml(r.name)}</span>
             ${r.stars > 0 ? `<span class="star-badge">★ ${r.stars}</span>` : ""}

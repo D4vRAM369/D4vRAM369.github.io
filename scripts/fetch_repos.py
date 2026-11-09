@@ -40,6 +40,25 @@ def pick_icon(name: str, desc: str) -> str:
     return DEFAULT_ICON
 
 
+def fetch_social_previews() -> dict:
+    """True para repos con imagen de social preview subida a mano en GitHub."""
+    query = """
+    query {
+      user(login: "%s") {
+        repositories(first: 100, privacy: PUBLIC, isFork: false) {
+          nodes { name usesCustomOpenGraphImage openGraphImageUrl }
+        }
+      }
+    }
+    """ % USER
+    raw = subprocess.run(
+        ["gh", "api", "graphql", "-f", f"query={query}"],
+        capture_output=True, text=True, check=True,
+    ).stdout
+    nodes = json.loads(raw)["data"]["user"]["repositories"]["nodes"]
+    return {n["name"]: n["openGraphImageUrl"] for n in nodes if n["usesCustomOpenGraphImage"]}
+
+
 def main() -> None:
     raw = subprocess.run(
         ["gh", "repo", "list", USER, "--no-archived", "--source", "-L", "200",
@@ -48,6 +67,7 @@ def main() -> None:
         capture_output=True, text=True, check=True,
     ).stdout
     repos = json.loads(raw)
+    social_previews = fetch_social_previews()
 
     public = [
         r for r in repos
@@ -69,6 +89,7 @@ def main() -> None:
             "created": r["createdAt"][:10],
             "updated": r["updatedAt"][:10],
             "icon": pick_icon(r["name"], r["description"] or ""),
+            "image": social_previews.get(r["name"], ""),
         })
 
     with open("data.js", "w", encoding="utf-8") as f:

@@ -10,7 +10,8 @@ const REPOS = [
     "stars": 21,
     "created": "2025-08-12",
     "updated": "2026-10-08",
-    "icon": "📱"
+    "icon": "📱",
+    "image": ""
   },
   {
     "name": "NowPlayingExporterPy",
@@ -22,7 +23,8 @@ const REPOS = [
     "stars": 4,
     "created": "2025-08-20",
     "updated": "2026-04-06",
-    "icon": "📱"
+    "icon": "📱",
+    "image": ""
   },
   {
     "name": "Fumitracking",
@@ -34,7 +36,8 @@ const REPOS = [
     "stars": 0,
     "created": "2025-09-28",
     "updated": "2026-10-26",
-    "icon": "🔒"
+    "icon": "🔒",
+    "image": ""
   },
   {
     "name": "PsychoLogger",
@@ -46,7 +49,8 @@ const REPOS = [
     "stars": 1,
     "created": "2025-11-17",
     "updated": "2026-11-08",
-    "icon": "🔒"
+    "icon": "🔒",
+    "image": "https://repository-images.githubusercontent.com/1097868612/288de0c9-b852-4a2c-87b3-683d9f69f942"
   },
   {
     "name": "GranCanMatch_bot",
@@ -58,7 +62,8 @@ const REPOS = [
     "stars": 0,
     "created": "2025-11-28",
     "updated": "2026-04-19",
-    "icon": "💬"
+    "icon": "💬",
+    "image": ""
   },
   {
     "name": "AhorrApp",
@@ -70,7 +75,8 @@ const REPOS = [
     "stars": 0,
     "created": "2025-12-10",
     "updated": "2026-04-19",
-    "icon": "📱"
+    "icon": "📱",
+    "image": ""
   },
   {
     "name": "ThreadsVault",
@@ -82,7 +88,8 @@ const REPOS = [
     "stars": 1,
     "created": "2026-02-20",
     "updated": "2026-04-19",
-    "icon": "📱"
+    "icon": "📱",
+    "image": ""
   },
   {
     "name": "ThreadsVault-desktop",
@@ -94,7 +101,8 @@ const REPOS = [
     "stars": 2,
     "created": "2026-02-27",
     "updated": "2026-04-19",
-    "icon": "🖥️"
+    "icon": "🖥️",
+    "image": ""
   },
   {
     "name": "Debuggle",
@@ -106,7 +114,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-03-16",
     "updated": "2026-04-24",
-    "icon": "🤖"
+    "icon": "🤖",
+    "image": "https://repository-images.githubusercontent.com/1183005677/e3f99da6-cf75-42ce-89e9-4fb5fde09d49"
   },
   {
     "name": "annas-archive-hub",
@@ -118,7 +127,8 @@ const REPOS = [
     "stars": 9,
     "created": "2026-04-09",
     "updated": "2026-11-09",
-    "icon": "🗄️"
+    "icon": "🗄️",
+    "image": ""
   },
   {
     "name": "TapTranslate",
@@ -130,7 +140,8 @@ const REPOS = [
     "stars": 1,
     "created": "2026-04-09",
     "updated": "2026-04-23",
-    "icon": "📱"
+    "icon": "📱",
+    "image": ""
   },
   {
     "name": "keep-android-open",
@@ -142,7 +153,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-05-21",
     "updated": "2026-11-08",
-    "icon": "📱"
+    "icon": "📱",
+    "image": ""
   },
   {
     "name": "DownloadThis",
@@ -154,7 +166,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-06-04",
     "updated": "2026-09-24",
-    "icon": "🖥️"
+    "icon": "🖥️",
+    "image": "https://repository-images.githubusercontent.com/1259800393/c722091b-bf7e-46b1-be56-7e123ea02bfb"
   },
   {
     "name": "meta-debug-pbl-skill",
@@ -166,7 +179,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-06-25",
     "updated": "2026-06-25",
-    "icon": "🤖"
+    "icon": "🤖",
+    "image": ""
   },
   {
     "name": "pbl-project-chronicler",
@@ -178,7 +192,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-10-01",
     "updated": "2026-10-02",
-    "icon": "🤖"
+    "icon": "🤖",
+    "image": "https://repository-images.githubusercontent.com/1399973309/dd1f4326-7524-4000-9f51-dd8d74e768e4"
   },
   {
     "name": "PillMate",
@@ -190,7 +205,8 @@ const REPOS = [
     "stars": 1,
     "created": "2026-10-12",
     "updated": "2026-11-05",
-    "icon": "🤖"
+    "icon": "🤖",
+    "image": "https://repository-images.githubusercontent.com/1416246712/1b095947-da12-4062-be92-d4f059bb98dc"
   },
   {
     "name": "vaso-de-contexto",
@@ -202,7 +218,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-10-13",
     "updated": "2026-10-14",
-    "icon": "📦"
+    "icon": "📦",
+    "image": ""
   },
   {
     "name": "PlaudVault",
@@ -214,7 +231,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-10-14",
     "updated": "2026-10-16",
-    "icon": "🔒"
+    "icon": "🔒",
+    "image": "https://repository-images.githubusercontent.com/1419829113/7ef3d27a-71d2-4697-a38c-01aa7c4593a3"
   },
   {
     "name": "ProfesorIA",
@@ -226,7 +244,8 @@ const REPOS = [
     "stars": 1,
     "created": "2026-10-26",
     "updated": "2026-11-05",
-    "icon": "🤖"
+    "icon": "🤖",
+    "image": "https://repository-images.githubusercontent.com/1433903644/0af7c88b-22a8-412f-a3d7-53b51e22f9e7"
   },
   {
     "name": "AllowancePrivacy",
@@ -238,7 +257,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-10-26",
     "updated": "2026-10-26",
-    "icon": "🔒"
+    "icon": "🔒",
+    "image": "https://repository-images.githubusercontent.com/1434903260/1cf9b51b-6f0a-4de7-9fc7-82e2d188050c"
   },
   {
     "name": "aranceless-userscript",
@@ -250,7 +270,8 @@ const REPOS = [
     "stars": 2,
     "created": "2026-10-28",
     "updated": "2026-10-29",
-    "icon": "⌨️"
+    "icon": "⌨️",
+    "image": "https://repository-images.githubusercontent.com/1436597626/8139ff23-39fa-49f9-ad55-5e3d203933ca"
   },
   {
     "name": "Mirlo-desktop",
@@ -262,7 +283,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-10-28",
     "updated": "2026-10-28",
-    "icon": "🖥️"
+    "icon": "🖥️",
+    "image": "https://repository-images.githubusercontent.com/1436873640/68714e84-52e3-41e6-ac15-0190c48bec74"
   },
   {
     "name": "Nisaba",
@@ -274,7 +296,8 @@ const REPOS = [
     "stars": 0,
     "created": "2026-10-29",
     "updated": "2026-11-01",
-    "icon": "🤖"
+    "icon": "🤖",
+    "image": "https://repository-images.githubusercontent.com/1438891030/41ca91dd-7d58-4ccd-9069-aee850559df3"
   },
   {
     "name": "AI2IA",
@@ -286,6 +309,7 @@ const REPOS = [
     "stars": 0,
     "created": "2026-11-08",
     "updated": "2026-11-08",
-    "icon": "🤖"
+    "icon": "🤖",
+    "image": "https://repository-images.githubusercontent.com/1450334273/03140b05-d686-4325-8109-fa33c9271c8a"
   }
 ];
