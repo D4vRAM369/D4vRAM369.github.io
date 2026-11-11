@@ -9,7 +9,7 @@ const REPOS = [
     "color": "#A97BFF",
     "stars": 21,
     "created": "2025-08-12",
-    "updated": "2026-10-08",
+    "updated": "2026-11-11",
     "icon": "📱",
     "image": "https://github.com/user-attachments/assets/5d8cfba5-8faa-4176-a689-c47b982c41ee"
   },
@@ -54,14 +54,14 @@ const REPOS = [
   },
   {
     "name": "GranCanMatch_bot",
-    "description": "Motor oficial de @CitasEnLasPalmas_bot — un bot de citas sencillo, directo y local para Gran Canaria, que pretende proponer un modelo alternativo a los engañosos y oscuros algoritmos de Tinder y demás redes similares donde solo importa la pasta. Creado por D4vRAM mediante IA con enfoque ABP, Node.js y despliegue en VPS para funcionamiento 24/7.",
+    "description": "Motor oficial de @CitasEnLasPalmas_bot — un bot de citas sencillo, directo y local para Gran Canaria, que pretende proponer un modelo alternativo a los engañosos y oscuros algoritmos de Tinder y demás redes similares donde solo importa la pasta. Hoy no está el VPS en funcionamiento porqué la base de datos de usuarios no fue bien, y existe un grupo.",
     "url": "https://github.com/D4vRAM369/GranCanMatch_bot",
-    "homepage": "https://t.me/CitasEnLasPalmas_bot",
+    "homepage": "https://t.me/GranCanMatch",
     "language": "JavaScript",
     "color": "#F1E05A",
     "stars": 0,
     "created": "2025-11-28",
-    "updated": "2026-04-19",
+    "updated": "2026-11-09",
     "icon": "💬",
     "image": "https://github.com/user-attachments/assets/3c1ce152-edd2-4414-a550-a5d4f609ad2a"
   },
@@ -121,12 +121,12 @@ const REPOS = [
     "name": "annas-archive-hub",
     "description": "Self-updating domain tracker for Anna's Archive with real-time verification and IPFS publishing. Never lose access again.",
     "url": "https://github.com/D4vRAM369/annas-archive-hub",
-    "homepage": "https://bafybeidrctdmkuttzttedxfzby5wrcnyymht6ccfrpo5yzuqjx6whrsgei.ipfs.inbrowser.link/",
+    "homepage": "https://bafybeia2lchfnb4la2ptm3nxdk3kw6subhl7lctfnkho3kfkp74evhm4wm.ipfs.inbrowser.link/",
     "language": "Python",
     "color": "#3572A5",
     "stars": 9,
     "created": "2026-04-09",
-    "updated": "2026-11-09",
+    "updated": "2026-11-11",
     "icon": "🗄️",
     "image": "https://github.com/user-attachments/assets/cfd41e9b-3230-4169-a1e2-b863e4d22e2d"
   },
@@ -152,7 +152,7 @@ const REPOS = [
     "color": "#E34C26",
     "stars": 0,
     "created": "2026-05-21",
-    "updated": "2026-11-08",
+    "updated": "2026-11-11",
     "icon": "📱",
     "image": ""
   },
@@ -204,7 +204,7 @@ const REPOS = [
     "color": "#A97BFF",
     "stars": 1,
     "created": "2026-10-12",
-    "updated": "2026-11-05",
+    "updated": "2026-11-11",
     "icon": "🤖",
     "image": "https://repository-images.githubusercontent.com/1416246712/1b095947-da12-4062-be92-d4f059bb98dc"
   },
@@ -311,5 +311,18 @@ const REPOS = [
     "updated": "2026-11-08",
     "icon": "🤖",
     "image": "https://repository-images.githubusercontent.com/1450334273/03140b05-d686-4325-8109-fa33c9271c8a"
+  },
+  {
+    "name": "playmax-to-showly",
+    "description": "Script que convierte el export de Playmax en un backup importable por Showly (series, películas, episodios vistos, pendientes y notas)",
+    "url": "https://github.com/D4vRAM369/playmax-to-showly",
+    "homepage": "",
+    "language": "Python",
+    "color": "#3572A5",
+    "stars": 0,
+    "created": "2026-11-11",
+    "updated": "2026-11-11",
+    "icon": "⌨️",
+    "image": ""
   }
 ];

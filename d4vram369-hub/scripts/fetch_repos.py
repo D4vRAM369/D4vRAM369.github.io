@@ -11,7 +11,7 @@ import subprocess
 import sys
 
 USER = "D4vRAM369"
-EXCLUDE = {"vercel-trophy"}
+EXCLUDE = {"vercel-trophy", "D4vRAM369.github.io"}  # la propia web no se lista a sí misma
 
 LANG_COLORS = {
     "Python": "#3572A5", "Kotlin": "#A97BFF", "TypeScript": "#3178C6",
