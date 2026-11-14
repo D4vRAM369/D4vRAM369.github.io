@@ -1,10 +1,25 @@
 # Cómo actualizar la web cuando publicas un repo nuevo
 
-La web (https://d4vram369.github.io/) **no detecta sola los repos nuevos**. La lista sale de `data.js`, que es una foto fija. Al publicar un repo, regenérala y súbela.
+## Automático (lo normal)
 
-> Solo se actualizan solas, sin hacer nada, la descripción, las estrellas y la web (homepage) de los repos que **ya** están en la lista.
+El workflow **Actualizar repos** (`.github/workflows/update-repos.yml`) lo hace solo:
 
-## Pasos (copiar y pegar, uno a uno)
+- Se ejecuta **cada 2 horas**: regenera `data.js` con `scripts/fetch_repos.py`, y si algo cambió (repo nuevo, banner, icono, estrellas…) hace commit y push. El push publica la web en GitHub Pages.
+- Si no quieres esperar, lánzalo a mano:
+  ```bash
+  gh workflow run update-repos.yml -R D4vRAM369/D4vRAM369.github.io
+  ```
+  o en GitHub: **Actions → Actualizar repos → Run workflow**.
+- Ver cómo fue:
+  ```bash
+  gh run list -R D4vRAM369/D4vRAM369.github.io -L 3
+  ```
+
+> Como el bot hace commits en `main`, antes de tocar algo en local haz siempre `git pull root main` (paso 2).
+
+## Manual (si el workflow falla o quieres probar un cambio del script)
+
+### Pasos (copiar y pegar, uno a uno)
 
 **1. Entrar en la carpeta de la web**
 ```bash
