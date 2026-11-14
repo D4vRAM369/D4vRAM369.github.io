@@ -342,7 +342,7 @@ const REPOS = [
     "name": "VeniceAI-exporter",
     "description": "Userscript to export Venice AI conversations to Markdown and PDF",
     "url": "https://github.com/D4vRAM369/VeniceAI-exporter",
-    "homepage": "",
+    "homepage": "https://greasyfork.org/es/scripts/605398-venice-ai-exporter-markdown-pdf",
     "language": "JavaScript",
     "color": "#F1E05A",
     "stars": 0,
