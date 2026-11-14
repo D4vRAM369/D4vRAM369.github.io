@@ -56,6 +56,23 @@
     });
   }
 
+  // Muchas descripciones van en dos idiomas separadas por " · " (EN · ES o ES · EN).
+  // Enseña solo la mitad del idioma activo; si no se distinguen, la deja entera.
+  const ES_HINT = /[áéíóúñ¿¡]|\b(de|la|el|que|con|tus|para|sin|y|en|los|las|una?)\b/gi;
+  const EN_HINT = /\b(the|and|with|your|for|without|from|to|of|an?)\b/gi;
+  function langScore(text) {
+    return (text.match(ES_HINT) || []).length - (text.match(EN_HINT) || []).length;
+  }
+  function localizedDesc(desc) {
+    const parts = (desc || "").split(" · ");
+    if (parts.length !== 2) return desc;
+    const [a, b] = parts.map(langScore);
+    if (Math.sign(a) === Math.sign(b)) return desc;
+    const esPart = a > b ? parts[0] : parts[1];
+    const enPart = a > b ? parts[1] : parts[0];
+    return currentLang === "es" ? esPart : enPart;
+  }
+
   function cardHtml(r) {
     const date = new Date(r.created).toLocaleDateString("es-ES", { year: "numeric", month: "short" });
     return `
@@ -69,7 +86,7 @@
             ${r.stars > 0 ? `<span class="star-badge">★ ${r.stars}</span>` : ""}
           </div>
           <div class="card-body">
-            <p class="desc">${escapeHtml(r.description || t("noDesc"))}</p>
+            <p class="desc">${escapeHtml(localizedDesc(r.description) || t("noDesc"))}</p>
             <div class="card-footer">
               ${r.language ? `<span class="lang-badge">${r.language}</span>` : "<span></span>"}
               <div class="links">

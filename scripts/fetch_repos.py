@@ -21,6 +21,7 @@ LANG_COLORS = {
 DEFAULT_COLOR = "#8b949e"
 
 ICON_RULES = [
+    (r"spotify|spicetify", "🎵✨"),
     (r"encrypt|cifr|privacy|privaci|pin|biometr", "🔒"),
     (r"\bAI\b|skill|LLM|agent|profesor|teach", "🤖"),
     (r"android|kotlin|APK", "📱"),
