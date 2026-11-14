@@ -121,12 +121,12 @@ const REPOS = [
     "name": "annas-archive-hub",
     "description": "Self-updating domain tracker for Anna's Archive with real-time verification and IPFS publishing. Never lose access again.",
     "url": "https://github.com/D4vRAM369/annas-archive-hub",
-    "homepage": "https://bafybeia2lchfnb4la2ptm3nxdk3kw6subhl7lctfnkho3kfkp74evhm4wm.ipfs.inbrowser.link/",
+    "homepage": "https://bafybeiftbd3k56l346pamfkhjgovfcuyrhfz36q54c3r7p7bui2dboos3q.ipfs.inbrowser.link/",
     "language": "Python",
     "color": "#3572A5",
     "stars": 9,
     "created": "2026-04-09",
-    "updated": "2026-11-11",
+    "updated": "2026-11-13",
     "icon": "🗄️",
     "image": "https://github.com/user-attachments/assets/cfd41e9b-3230-4169-a1e2-b863e4d22e2d"
   },
@@ -152,7 +152,7 @@ const REPOS = [
     "color": "#E34C26",
     "stars": 0,
     "created": "2026-05-21",
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "icon": "📱",
     "image": ""
   },
@@ -191,7 +191,7 @@ const REPOS = [
     "color": "#E34C26",
     "stars": 0,
     "created": "2026-10-01",
-    "updated": "2026-10-02",
+    "updated": "2026-11-11",
     "icon": "🤖",
     "image": "https://repository-images.githubusercontent.com/1399973309/dd1f4326-7524-4000-9f51-dd8d74e768e4"
   },
@@ -314,15 +314,28 @@ const REPOS = [
   },
   {
     "name": "playmax-to-showly",
-    "description": "Script que convierte el export de Playmax en un backup importable por Showly (series, películas, episodios vistos, pendientes y notas)",
+    "description": "Script que convierte el export de Playmax en un backup importable por Showly: series, películas, episodios vistos, pendientes y notas. · Script that converts a Playmax export into a Showly-importable backup: shows, movies, watched episodes, watchlist and ratings.",
     "url": "https://github.com/D4vRAM369/playmax-to-showly",
     "homepage": "",
     "language": "Python",
     "color": "#3572A5",
     "stars": 0,
     "created": "2026-11-11",
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "icon": "⌨️",
     "image": ""
+  },
+  {
+    "name": "spicetify-vibemusic",
+    "description": "✨ Natural-language AI playlist generator for Spicetify — creates private playlists with real Spotify catalog tracks using free API keys (Gemini, Groq, OpenRouter, Ollama). · Crea playlists privadas con canciones reales describiendo lo que quieres escuchar.",
+    "url": "https://github.com/D4vRAM369/spicetify-vibemusic",
+    "homepage": "",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-14",
+    "updated": "2026-11-14",
+    "icon": "🤖",
+    "image": "https://raw.githubusercontent.com/D4vRAM369/spicetify-vibemusic/main/assets/social-preview.png"
   }
 ];
