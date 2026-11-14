@@ -332,10 +332,10 @@ const REPOS = [
     "homepage": "",
     "language": "JavaScript",
     "color": "#F1E05A",
-    "stars": 0,
+    "stars": 1,
     "created": "2026-11-14",
     "updated": "2026-11-14",
     "icon": "🎵✨",
-    "image": "https://raw.githubusercontent.com/D4vRAM369/spicetify-vibemusic/main/assets/social-preview.png"
+    "image": "https://repository-images.githubusercontent.com/1457391742/e503969f-1de2-4931-af24-fd189cea56e5"
   }
 ];
