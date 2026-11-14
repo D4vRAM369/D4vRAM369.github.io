@@ -1,0 +1,55 @@
+# Mantiene la web al día con tus repos públicos (nuevos repos, banners, iconos).
+#
+# GitHub no tiene un evento "he creado un repo en mi cuenta", así que esto se
+# ejecuta cada 2 horas y también a mano desde Actions → "Actualizar repos" → Run workflow.
+# Si data.js no cambia, no hace nada.
+name: Actualizar repos
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"   # cada 2 horas, en el minuto 17 (evita la hora en punto, más cargada)
+  workflow_dispatch:
+
+permissions:
+  contents: write   # commit y push de data.js
+  pages: write      # pedir un build de GitHub Pages
+
+concurrency:
+  group: update-repos
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerar data.js
+        env:
+          GH_TOKEN: ${{ github.token }}   # fetch_repos.py usa la CLI `gh`; solo ve repos públicos
+        run: |
+          python3 scripts/fetch_repos.py
+          cp data.js d4vram369-hub/data.js
+
+      - name: Commit y push si cambió algo
+        id: commit
+        run: |
+          if git diff --quiet -- data.js d4vram369-hub/data.js; then
+            echo "Sin cambios."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.js d4vram369-hub/data.js
+          git commit -m "Actualizar repos (automático)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Los push hechos con el token del workflow no siempre disparan el build de
+      # Pages, así que lo pedimos explícitamente.
+      - name: Publicar en GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
