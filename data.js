@@ -350,5 +350,18 @@ const REPOS = [
     "updated": "2026-11-14",
     "icon": "🤖",
     "image": ""
+  },
+  {
+    "name": "InSalud",
+    "description": "Plataforma ciudadana de defensa sanitaria en Gran Canaria (SCS / ODDUS). Reclamaciones anónimas, enrutamiento legal y redirección segura sin custodia de DNI/Cl@ve.",
+    "url": "https://github.com/D4vRAM369/InSalud",
+    "homepage": "https://insalud-gc.vercel.app",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-16",
+    "updated": "2026-11-16",
+    "icon": "📦",
+    "image": "https://raw.githubusercontent.com/D4vRAM369/InSalud/main/assets/img/banner-insalud.jpg"
   }
 ];
