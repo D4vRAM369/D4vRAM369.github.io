@@ -352,16 +352,42 @@ const REPOS = [
     "image": ""
   },
   {
+    "name": "listening-intelligence_spicetify",
+    "description": "Spicetify extension that logs what, when and how you listen on Spotify: stats, habits, trends, cleanup and memories. 100% local.",
+    "url": "https://github.com/D4vRAM369/listening-intelligence_spicetify",
+    "homepage": "",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-14",
+    "updated": "2026-11-16",
+    "icon": "🎵✨",
+    "image": "https://repository-images.githubusercontent.com/1458271950/c70173aa-4c9b-4be1-822c-072566d39d85"
+  },
+  {
+    "name": "musical-dna_spicetify",
+    "description": "Spicetify extension: explainable taste profile and a small bandit recommender that learns from your local Spotify history. 100% local.",
+    "url": "https://github.com/D4vRAM369/musical-dna_spicetify",
+    "homepage": "",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-15",
+    "updated": "2026-11-16",
+    "icon": "🎵✨",
+    "image": "https://repository-images.githubusercontent.com/1458303783/93b5a6a0-5746-42a3-8da2-470b9fd1ba0a"
+  },
+  {
     "name": "InSalud",
     "description": "Plataforma ciudadana de defensa sanitaria en Gran Canaria (SCS / ODDUS). Reclamaciones anónimas, enrutamiento legal y redirección segura sin custodia de DNI/Cl@ve.",
     "url": "https://github.com/D4vRAM369/InSalud",
-    "homepage": "https://insalud-gc.vercel.app",
+    "homepage": "https://insalud-lpgc.vercel.app",
     "language": "JavaScript",
     "color": "#F1E05A",
     "stars": 0,
     "created": "2026-11-16",
     "updated": "2026-11-16",
     "icon": "📦",
-    "image": "https://raw.githubusercontent.com/D4vRAM369/InSalud/main/assets/img/banner-insalud.jpg"
+    "image": "https://repository-images.githubusercontent.com/1459972233/4d3de425-ae9c-4e0a-a341-26fffeaf8442"
   }
 ];
