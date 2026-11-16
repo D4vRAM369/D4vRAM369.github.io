@@ -1,6 +1,6 @@
 # portfolio
 
-Web estática con mis proyectos públicos de GitHub, en timeline. Vista en vivo: https://d4vram369.github.io/portfolio/
+Web estática con mis proyectos públicos de GitHub, en timeline. Vista en vivo: https://d4vram369.github.io/
 
 ## Stack
 HTML/CSS/JS plano, sin build. `data.js` es un snapshot estático generado con `scripts/fetch_repos.py` (requiere `gh` autenticado).
