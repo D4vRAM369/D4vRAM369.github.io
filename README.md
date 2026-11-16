@@ -1,5 +1,7 @@
 # portfolio
 
+[![Visitas](https://d4vram369.goatcounter.com/counter/TOTAL.svg)](https://d4vram369.goatcounter.com)
+
 Web estática con mis proyectos públicos de GitHub, en timeline. Vista en vivo: https://d4vram369.github.io/
 
 ## Stack
