@@ -121,12 +121,12 @@ const REPOS = [
     "name": "annas-archive-hub",
     "description": "Self-updating domain tracker for Anna's Archive with real-time verification and IPFS publishing. Never lose access again.",
     "url": "https://github.com/D4vRAM369/annas-archive-hub",
-    "homepage": "https://bafybeidvfr2jnjjjij7kn5342fv7vmqgb5cxrm5dn2wushqycilj7p33lq.ipfs.inbrowser.link/",
+    "homepage": "https://bafybeihplqafp3serig42kw7egb3mkgdw7mw7pyn6akbd5m2ykjrmzbj2u.ipfs.inbrowser.link/",
     "language": "Python",
     "color": "#3572A5",
     "stars": 9,
     "created": "2026-04-09",
-    "updated": "2026-11-14",
+    "updated": "2026-11-16",
     "icon": "🗄️",
     "image": "https://github.com/user-attachments/assets/cfd41e9b-3230-4169-a1e2-b863e4d22e2d"
   },
@@ -337,5 +337,57 @@ const REPOS = [
     "updated": "2026-11-14",
     "icon": "🎵✨",
     "image": "https://repository-images.githubusercontent.com/1457391742/e503969f-1de2-4931-af24-fd189cea56e5"
+  },
+  {
+    "name": "VeniceAI-exporter",
+    "description": "Userscript to export Venice AI conversations to Markdown and PDF",
+    "url": "https://github.com/D4vRAM369/VeniceAI-exporter",
+    "homepage": "https://greasyfork.org/es/scripts/605398-venice-ai-exporter-markdown-pdf",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-14",
+    "updated": "2026-11-14",
+    "icon": "🤖",
+    "image": ""
+  },
+  {
+    "name": "listening-intelligence_spicetify",
+    "description": "Spicetify extension that logs what, when and how you listen on Spotify: stats, habits, trends, cleanup and memories. 100% local.",
+    "url": "https://github.com/D4vRAM369/listening-intelligence_spicetify",
+    "homepage": "",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-14",
+    "updated": "2026-11-16",
+    "icon": "🎵✨",
+    "image": "https://repository-images.githubusercontent.com/1458271950/c70173aa-4c9b-4be1-822c-072566d39d85"
+  },
+  {
+    "name": "musical-dna_spicetify",
+    "description": "Spicetify extension: explainable taste profile and a small bandit recommender that learns from your local Spotify history. 100% local.",
+    "url": "https://github.com/D4vRAM369/musical-dna_spicetify",
+    "homepage": "",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-15",
+    "updated": "2026-11-16",
+    "icon": "🎵✨",
+    "image": "https://repository-images.githubusercontent.com/1458303783/93b5a6a0-5746-42a3-8da2-470b9fd1ba0a"
+  },
+  {
+    "name": "InSalud",
+    "description": "Plataforma ciudadana de defensa sanitaria en Gran Canaria (SCS / ODDUS). Reclamaciones anónimas, enrutamiento legal y redirección segura sin custodia de DNI/Cl@ve.",
+    "url": "https://github.com/D4vRAM369/InSalud",
+    "homepage": "https://insalud-lpgc.vercel.app",
+    "language": "JavaScript",
+    "color": "#F1E05A",
+    "stars": 0,
+    "created": "2026-11-16",
+    "updated": "2026-11-16",
+    "icon": "📦",
+    "image": "https://repository-images.githubusercontent.com/1459972233/4d3de425-ae9c-4e0a-a341-26fffeaf8442"
   }
 ];
