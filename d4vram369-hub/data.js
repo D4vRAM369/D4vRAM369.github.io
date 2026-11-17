@@ -121,7 +121,7 @@ const REPOS = [
     "name": "annas-archive-hub",
     "description": "Self-updating domain tracker for Anna's Archive with real-time verification and IPFS publishing. Never lose access again.",
     "url": "https://github.com/D4vRAM369/annas-archive-hub",
-    "homepage": "https://bafybeidamzju5s2vt3gqfytjjbpy5ocjoc366e3tnjnud6nqk2nq3fvsoq.ipfs.inbrowser.link/",
+    "homepage": "https://bafybeigbelwoiqaguit5hn2miv7jf2jmaswermn2ctje4svuiscspg72gy.ipfs.inbrowser.link/",
     "language": "Python",
     "color": "#3572A5",
     "stars": 9,
@@ -334,7 +334,7 @@ const REPOS = [
     "color": "#F1E05A",
     "stars": 1,
     "created": "2026-11-14",
-    "updated": "2026-11-14",
+    "updated": "2026-11-17",
     "icon": "🎵✨",
     "image": "https://repository-images.githubusercontent.com/1457391742/e503969f-1de2-4931-af24-fd189cea56e5"
   },
@@ -345,9 +345,9 @@ const REPOS = [
     "homepage": "https://greasyfork.org/es/scripts/605398-venice-ai-exporter-markdown-pdf",
     "language": "JavaScript",
     "color": "#F1E05A",
-    "stars": 0,
+    "stars": 1,
     "created": "2026-11-14",
-    "updated": "2026-11-14",
+    "updated": "2026-11-17",
     "icon": "🤖",
     "image": ""
   },
@@ -358,7 +358,7 @@ const REPOS = [
     "homepage": "",
     "language": "JavaScript",
     "color": "#F1E05A",
-    "stars": 0,
+    "stars": 1,
     "created": "2026-11-14",
     "updated": "2026-11-17",
     "icon": "🎵✨",
@@ -371,7 +371,7 @@ const REPOS = [
     "homepage": "",
     "language": "JavaScript",
     "color": "#F1E05A",
-    "stars": 0,
+    "stars": 1,
     "created": "2026-11-15",
     "updated": "2026-11-17",
     "icon": "🎵✨",
@@ -389,5 +389,18 @@ const REPOS = [
     "updated": "2026-11-16",
     "icon": "📦",
     "image": "https://repository-images.githubusercontent.com/1459972233/4d3de425-ae9c-4e0a-a341-26fffeaf8442"
+  },
+  {
+    "name": "OurSecret-Linux-port",
+    "description": "Steganography + AES-256-GCM & Argon2id for Linux, Windows & macOS (clean-room OurSecret port) | Esteganografía + cifrado autenticado con CLI y GUI Tauri",
+    "url": "https://github.com/D4vRAM369/OurSecret-Linux-port",
+    "homepage": "",
+    "language": "Rust",
+    "color": "#DEA584",
+    "stars": 0,
+    "created": "2026-11-17",
+    "updated": "2026-11-17",
+    "icon": "🔒",
+    "image": "https://repository-images.githubusercontent.com/1461898347/776b4866-0b14-43bb-a102-00d8756288d3"
   }
 ];
