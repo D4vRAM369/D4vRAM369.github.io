@@ -121,7 +121,7 @@ const REPOS = [
     "name": "annas-archive-hub",
     "description": "Self-updating domain tracker for Anna's Archive with real-time verification and IPFS publishing. Never lose access again.",
     "url": "https://github.com/D4vRAM369/annas-archive-hub",
-    "homepage": "https://bafybeihplqafp3serig42kw7egb3mkgdw7mw7pyn6akbd5m2ykjrmzbj2u.ipfs.inbrowser.link/",
+    "homepage": "https://bafybeif7rzkqw5u2squ5afjspxaugt7g6kf4etjn5gs3rdc6kysbcfa3xu.ipfs.inbrowser.link/",
     "language": "Python",
     "color": "#3572A5",
     "stars": 9,
@@ -360,7 +360,7 @@ const REPOS = [
     "color": "#F1E05A",
     "stars": 0,
     "created": "2026-11-14",
-    "updated": "2026-11-16",
+    "updated": "2026-11-17",
     "icon": "🎵✨",
     "image": "https://repository-images.githubusercontent.com/1458271950/c70173aa-4c9b-4be1-822c-072566d39d85"
   },
@@ -373,7 +373,7 @@ const REPOS = [
     "color": "#F1E05A",
     "stars": 0,
     "created": "2026-11-15",
-    "updated": "2026-11-16",
+    "updated": "2026-11-17",
     "icon": "🎵✨",
     "image": "https://repository-images.githubusercontent.com/1458303783/93b5a6a0-5746-42a3-8da2-470b9fd1ba0a"
   },
