@@ -121,7 +121,7 @@ const REPOS = [
     "name": "annas-archive-hub",
     "description": "Self-updating domain tracker for Anna's Archive with real-time verification and IPFS publishing. Never lose access again.",
     "url": "https://github.com/D4vRAM369/annas-archive-hub",
-    "homepage": "https://bafybeicsa2asmiw7bzwfzwltj73i3tsd4m5yemzi3jmppqyruhjgdssqre.ipfs.inbrowser.link/",
+    "homepage": "https://bafybeifqrxxieniqiiddtjddmb3t53s3flbonz6vvw2zpsazlhzvfe5q6q.ipfs.inbrowser.link/",
     "language": "Python",
     "color": "#3572A5",
     "stars": 11,
