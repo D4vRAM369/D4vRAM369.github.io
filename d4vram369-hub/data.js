@@ -275,14 +275,14 @@ const REPOS = [
   },
   {
     "name": "Mirlo-desktop",
-    "description": "Bóveda local para posts de X/Twitter: texto, fotos, vídeos y documentos en tu disco, con búsqueda y etiquetas. Sin cuenta ni nube. · Local vault for X/Twitter posts: text, photos, videos and documents on your disk, with search and tags. No account, no cloud.",
+    "description": "Local vault for X/Twitter posts: text, photos, videos and documents on your disk, with search and tags. No account, no cloud. ~ Bóveda local para posts de X/Twitter: texto, fotos, vídeos y documentos en tu disco, con búsqueda y etiquetas. Sin cuenta ni nube.",
     "url": "https://github.com/D4vRAM369/Mirlo-desktop",
     "homepage": "",
     "language": "Rust",
     "color": "#DEA584",
     "stars": 0,
     "created": "2026-10-28",
-    "updated": "2026-10-28",
+    "updated": "2026-11-23",
     "icon": "🖥️",
     "image": "https://repository-images.githubusercontent.com/1436873640/68714e84-52e3-41e6-ac15-0190c48bec74"
   },
