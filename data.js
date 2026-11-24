@@ -121,7 +121,7 @@ const REPOS = [
     "name": "annas-archive-hub",
     "description": "Self-updating domain tracker for Anna's Archive with real-time verification and IPFS publishing. Never lose access again.",
     "url": "https://github.com/D4vRAM369/annas-archive-hub",
-    "homepage": "https://bafybeifgq63ckwy2vkjcq2d6jqf3zeucnge54izrtlyicitzfsd4eke4te.ipfs.inbrowser.link/",
+    "homepage": "https://bafybeibbh2kxgpbbzvdrvwtxcmndljjvkjukmr6yw32knfrrfxw6cx6ck4.ipfs.inbrowser.link/",
     "language": "Python",
     "color": "#3572A5",
     "stars": 12,
@@ -402,5 +402,18 @@ const REPOS = [
     "updated": "2026-11-17",
     "icon": "🔒",
     "image": "https://repository-images.githubusercontent.com/1461898347/776b4866-0b14-43bb-a102-00d8756288d3"
+  },
+  {
+    "name": "sendwithmirlo-for-x-twitter",
+    "description": "Save X (Twitter) posts from Android to Mirlo-desktop with one tap: LSPatch/LSPosed module adding a Mirlo button to X's Share sheet, synced via Syncthing. · Guarda posts de X desde Android en Mirlo-desktop con un toque.",
+    "url": "https://github.com/D4vRAM369/sendwithmirlo-for-x-twitter",
+    "homepage": "",
+    "language": "Kotlin",
+    "color": "#A97BFF",
+    "stars": 0,
+    "created": "2026-11-24",
+    "updated": "2026-11-24",
+    "icon": "📱",
+    "image": "https://repository-images.githubusercontent.com/1470777835/dc16e7e6-d636-4c79-b598-34132350a6f8"
   }
 ];
