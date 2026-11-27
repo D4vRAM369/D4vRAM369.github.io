@@ -358,9 +358,9 @@ const REPOS = [
     "homepage": "",
     "language": "JavaScript",
     "color": "#F1E05A",
-    "stars": 1,
+    "stars": 0,
     "created": "2026-11-14",
-    "updated": "2026-11-17",
+    "updated": "2026-11-27",
     "icon": "🎵✨",
     "image": "https://repository-images.githubusercontent.com/1458271950/c70173aa-4c9b-4be1-822c-072566d39d85"
   },
@@ -371,9 +371,9 @@ const REPOS = [
     "homepage": "",
     "language": "JavaScript",
     "color": "#F1E05A",
-    "stars": 1,
+    "stars": 0,
     "created": "2026-11-15",
-    "updated": "2026-11-17",
+    "updated": "2026-11-27",
     "icon": "🎵✨",
     "image": "https://repository-images.githubusercontent.com/1458303783/93b5a6a0-5746-42a3-8da2-470b9fd1ba0a"
   },
